@@ -4,98 +4,304 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IslamPlus</title>
-    <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
+  <title>IslamPlus - Your Comprehensive Islamic App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: #555;
+  }
+  
+  h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header Styles */
   header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #f5f5f5;
-      border-radius: 4px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    section {
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      color: #333;
-      margin-top: 0;
-    }
-
-    ul {
-      margin: 0;
-      padding: 0 0 0 20px;
-      list-style-type: disc;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-      font-size: 14px;
-    }
+    background-color: #7f8a9b;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  header h1 {
+    font-size: 48px;
+  }
+  
+  header p {
+    font-size: 20px;
+  }
+  
+  /* Features Styles */
+  #features {
+    padding: 60px 0;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .feature i {
+    font-size: 40px;
+    margin-right: 20px;
+    color: #7f8a9b;
+  }
+  
+  .feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .feature p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #777;
+  }
+  
+  /* Testimonials Styles */
+  #testimonials {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+  }
+  
+  .testimonial {
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+  }
+  
+  .testimonial blockquote {
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .testimonial cite {
+    font-weight: bold;
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Download Styles */
+  #download {
+    text-align: center;
+    padding: 60px 0;
+  }
+  
+  .btn-download {
+    display: inline-block;
+    background-color: #7f8a9b;
+    color: #fff;
+    font-size: 20px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .btn-download:hover {
+    background-color: #5e6b7c;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
   </style>
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
+  <!-- Header Section -->
   <header>
-    <h1>IslamPlus</h1>
+    <div class="container">
+      <h1>IslamPlus</h1>
+      <p>Your Comprehensive Islamic App</p>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Beautifully designed Quran and Hadith App with lots of features.</h2>
-      <p>IslamPlus is a Quran and Hadith App that provides users with a comprehensive set of features:</p>
-      <ul>
-        <li>Complete Quran</li>
-        <li>Hadith books</li>
-        <li>Asma Ul Husna</li>
-        <li>Tasbeeh</li>
-        <li>Famous Hadiths</li>
-        <li>Hadith authentication</li>
-        <li>Hadith Search</li>
-        <li>Prayer timings</li>
-        <li>Supplications</li>
-        <li>And much more</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Video Introduction</h2>
-      <div class="video-container">
-        <iframe width="750" height="450" src="https://www.youtube.com/embed/GPGOf-Ztmfw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <!-- Features Section -->
+<!-- Features Section -->
+<section id="features">
+    <div class="container">
+      <h2>Key Features</h2>
+      <div class="feature">
+        <i class="fas fa-quran"></i>
+        <div>
+          <h3>Complete Quran Reading and Translation</h3>
+          <p>Read and explore the entire Quran with translation in multiple languages.</p>
+        </div>
       </div>
-    </section>
+      <div class="feature">
+        <i class="fas fa-book-open"></i>
+        <div>
+          <h3>Hadith Reading</h3>
+          <p>Access a vast collection of Hadith books and explore the teachings of Prophet Muhammad (peace be upon him).</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-bell"></i>
+        <div>
+          <h3>Prayer Timings with Notifications</h3>
+          <p>Stay updated with accurate prayer times and receive notifications for prayer reminders.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-scroll"></i>
+        <div>
+          <h3>Asma Ul Husna</h3>
+          <p>Discover and learn the beautiful names of Allah (Asma Ul Husna) along with their meanings.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-praying-hands"></i>
+        <div>
+          <h3>Tasbeeh</h3>
+          <p>Keep track of your dhikr and tasbeeh with a digital tasbeeh counter.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-quote-left"></i>
+        <div>
+          <h3>Famous Hadiths</h3>
+          <p>Explore a curated collection of famous Hadiths for guidance and inspiration.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-lock"></i>
+        <div>
+          <h3>Hadith Authentication</h3>
+          <p>Ensure the authenticity of Hadiths through reliable authentication and grading.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-search"></i>
+        <div>
+          <h3>Hadith Search</h3>
+          <p>Effortlessly search and find Hadiths based on keywords or topics.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-heart"></i>
+        <div>
+          <h3>Supplications</h3>
+          <p>Discover a collection of supplications and du'as for various occasions and situations.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-share-alt"></i>
+        <div>
+          <h3>Share Quran Ayat, Hadith, and Duas</h3>
+          <p>Share your favorite Quran verses, Hadiths, and Duas with friends and family.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Video Section -->
+<section id="video">
+    <div class="container">
+      <h2>Discover IslamPlus in Action</h2>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GPGOf-Ztmfw" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="container">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial">
+        <blockquote>"IslamPlus has greatly enhanced my daily Islamic practices. It's a comprehensive app that I highly recommend to every Muslim."</blockquote>
+        <cite>- John Doe</cite>
+      </div>
+      <div class="testimonial">
+        <blockquote>"The features of IslamPlus are outstanding. I love the simplicity and user-friendly interface of the app. It has become an essential part of my spiritual journey."</blockquote>
+        <cite>- Jane Smith</cite>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Contact Us</h2>
-      <p>If you have any questions or need further clarification or have any concerns regarding the privacy policy of IslamPlus, please contact us using the information below:</p>
-  <p>Email: ammarzaffar6566@gmail.com</p>
-</section>
-</main>
+<!-- Download Section -->
+<section id="download">
+    <div class="container">
+      <h2>Download IslamPlus Now</h2>
+      <p>Join millions of Muslims who are benefiting from IslamPlus.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.fayaz.islamicappuniversal" class="btn-download">Download Now</a>
+    </div>
+  </section>
+  
+
+  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2023 IslamPlus. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2023 IslamPlus. All rights reserved.</p>
+    </div>
   </footer>
 </body>
+
 </html>
